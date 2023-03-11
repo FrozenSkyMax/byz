@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>学历查询</title>
+        <script language="JavaScript">
+        <!--
+        var password="";
+        password=prompt('请输入查询密码以查询 :','');
+        if (password != 'yangyuchao')   
+           {alert("密码不正确,无法查询!!");
+           window.opener=null; window.close();}  // 密码不正确就关闭
+     //-->
+    </script>
+    <style>
+ 
+        /* Set display to none for image*/
+        #image {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+     <div>
+        <h1>查询完成</h1>
+        <h3>点击查看按钮查看查询结果</h3>
+ 
+        <!-- Add id to image -->
+        <img id="image" src=
+"jianjie.jpg"
+            alt="GFG image" />
+    </div>
+ 
+    <button type="button"
+        onclick="show()" id="btnID">
+        查看
+    </button>
+ 
+    <script>
+        function show() {
+ 
+            /* Access image by id and change
+            the display property to block*/
+            document.getElementById('image')
+                    .style.display = "block";
+ 
+            document.getElementById('btnID')
+                    .style.display = "none";
+        }
+    </script>
+</body>
+</html>
